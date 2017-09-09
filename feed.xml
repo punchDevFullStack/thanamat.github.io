@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2017-07-18T19:32:00+07:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>My new Article</title>
+    <link rel="alternate" href="http://blog.url.com/2017/07/18/my-new-article-html/"/>
+    <id>http://blog.url.com/2017/07/18/my-new-article-html/</id>
+    <published>2017-07-18T19:32:00+07:00</published>
+    <updated>2017-07-18T19:38:00+07:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="header1"&gt;header1&lt;/h1&gt;
+&lt;p&gt;## header2&lt;/p&gt;
+
+&lt;p&gt;This is paragraph&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/"&gt;Go to home&lt;/a&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Example Article</title>
+    <link rel="alternate" href="http://blog.url.com/2012/01/01/example-article-html/"/>
+    <id>http://blog.url.com/2012/01/01/example-article-html/</id>
+    <published>2012-01-01T07:00:00+07:00</published>
+    <updated>2017-07-19T15:39:46+07:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;NoSQL คืออะไร&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NoSQL เป็นการเก็บข้อมูลที่ไม่ใช่การเก็บข้อมูลเชิงสัมพันธ์(Relational database)อย่างที่เราเคยใช้กันใน MySQL ,Oracle และอื่นๆ  ที่เก็บข้อมูลในรูปแบบของตาราง และ NoSQL นั้นจะไม่ใช้ SQL statement ในการจัดการกับข้อมูลNoSQL มีหลายประเภทซึ่งจะแบ่งตามลักษณะของการเก็บข้อมูล เช่น 
+1.Column เช่น Hadoop, HBase
+2.Document เช่น MongoDB, FireBase
+3.Key-Value เช่น MemcacheDB, Redis อาจนำไปใช้เป็น ข้อมูล session ของ user
+4.Graph เช่น Neo4J, Infinite Graph&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Redis คืออะไร&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Redis เป็น NoSQL ประเภทหนึ่งที่เก็บข้อมูลแบบ key-value  เป็น in-memory data structure store หรือการเก็บข้อมูลที่ทำงานอยู่บนแรม  ไม่เหมือนกับ database ที่เป็น Relational database ที่จะทำงานบนฮาร์ดดิสก์ ทำงานบนแรมจะเร็วกว่า  ซึ่ง Redis นั้นเหมาะกับงานที่ต้องการประมวลผล data  จำนวนมากบนแรมได้ในเวลาอันรวดเร็ว  ในการใช้งานจริงก็อาจจะมีการแบ่งส่วนหน้าที่การทำงานของ MySQL กับ Redis เช่น เก็บข้อมูลถาวรลง MySQL  แล้วดึงข้อมูลจาก MySQL ลง  Redis เมื่อมีการใช้งาน ก็จะมาอ่านที่ Redis อย่างเดียว เพราะถ้าจะให้ Redis เก็บข้อมูลแบบถาวรที่เก็บบนฮาร์ดดิสก์มันอาจจะไม่เหมาะ(อาจจะต้องมีการ config )  และคิดว่า Redis นั้นเกิดมาเพื่อเก็บข้อมูลแบบชั่วคราว (Caching)&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+</feed>
